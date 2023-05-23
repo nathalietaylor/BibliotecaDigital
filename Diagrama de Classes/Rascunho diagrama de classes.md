@@ -189,6 +189,7 @@ tipo: string
 getCodigoCategoria(): int
 
 getNome(): string
+ 
 ---------------------
 
 
