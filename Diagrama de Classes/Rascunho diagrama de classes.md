@@ -14,13 +14,13 @@
 
 ###### Livros:
 
-lista de atributos: codigoLivro (int), titulo(string), autor (string) e categoria (string). 
+lista de atributos: codigoLivro (int), titulo(string) e autor (string) ---------> categoria é uma relação de classe, precisa ver qual se encaixa: eu achei esse site aqui : https://www.edrawsoft.com/pt/article/class-diagram-relationships.html?gclid=Cj0KCQjwyLGjBhDKARIsAFRNgW_p0--EZLX2I5UP2YVuDQ-EmQkxeTsKtmClmHBrhnSjhibOBI-pWzkaAijHEALw_wcB#:~:text=Relacionamento%20Entre%20Classes
 
 ###### Usuarios:
 
 lista de atributos:  RA(long) e nome (string).
 
-###### Historico:
+###### Historico/Emprestimo:
 
 lista de atributos: codigoLivro(int), titulo(string), autor (string), status (string) e nome (string);
 
@@ -29,15 +29,11 @@ lista de atributos: codigoLivro(int), titulo(string), autor (string), status (st
 lista de atributos: codigoCategoria (int), tipo (string)
 
 
-
-
-
 ##### Operações:
 
 ###### Livros:
 
-lista de operações: getCodigoLivro(): int, getTitulo(): string, getAutor(): string, getCategoria() 
-
+lista de operações: getCodigoLivro(): int, getTitulo(): string, getAutor(): string, getCategoria()
 ###### Usuarios:
 
 lista de operações: getRA(): long, getNome():string
@@ -48,8 +44,11 @@ lista de operações: getCodigoLivro(): int, getTitulo():string, getAutor():stri
 
 ###### Categoria:
 
-lista de operações: getCodigoCategoria(): int, getTipo():string
+lista de operações: getCodigoCategoria(): int, getTipo():string 
 
+(faltam a de usuário) acho que é algo do tipo: getId(): long
+
+getNome(): string
 
 
 
@@ -64,23 +63,27 @@ livros: Lista<Livros>
 
 usuarios: Lista<Usuarios>
 
-historico: Lista <Historico>
+emprestimo: Lista <Emprestimo>
 
 categorias: Lista <Categoria>
 
 --------------------------------
 
-adicionarLivro(livro: Livro): void
+criarLivro(livro: Livro): void
 
 removerLivro(livro: Livro): void
 
-adicionarUsuario(usuario: Usuario): void
+alterarLivro(livro: Livro): void
+
+criarUsuario(usuario: Usuario): void
 
 removerUsuario(usuario: Usuario): void
 
 adicionarHistorico(historico: Historico): void
 
-adicionarCategoria(categoria: CategoriaLivro): void
+criarCategoria(categoria: CategoriaLivro): void
+  
+alterarCategoria(categoria: CategoriaLivro): void
 
 -------
 
@@ -98,7 +101,7 @@ titulo: string   
 
 autor: string  
 
-genero: string       
+genero: string     (eu acho que não tem esse dai, por ser relação) - caso for referencia da tabela relacional seria (int cod_livro, int cod_categoria) 
 
 ---------------------
 
@@ -189,6 +192,10 @@ tipo: string
 getCodigoCategoria(): int
 
 getNome(): string
+  
+criarCategoria():String
+AlterarCategotia():String
+
  
 ---------------------
 
