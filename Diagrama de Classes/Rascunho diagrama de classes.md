@@ -129,16 +129,20 @@ nome: string
 getId(): long
 
 getNome(): string
+  
+alugaLivro()
+
+devolveLivro()
 
 ---------------------
 
 
 
-* * *
+---------------------
 
  Historico            
 
-* * *
+---------------------
 
 codigoLivro: int
 
@@ -150,7 +154,7 @@ status: string
 
 nome: string  
 
-* * *
+---------------------
 
 getCod(): int
 
@@ -163,28 +167,29 @@ getStatus(): string
 setStatus():string
 
 getNome():string
+  
+VerificaStatus():bool
 
-------- 
+---------------------
 
 
 
-* * *
+---------------------
 
 Categoria
 
-* * *
+---------------------
 
 codigoCategoria: int
 
 tipo: string
 
-* * *
+---------------------
 
 getCodigoCategoria(): int
 
 getNome(): string
-
--------- 
+---------------------
 
 
 
