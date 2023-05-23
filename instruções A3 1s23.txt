@@ -1,0 +1,54 @@
+CRUD = acronimo para create, read, update e delete, que são as 4 funções basicas de um sitema que trabalha com um banco de dados; são usadas para manipular dados em um banco, permitindo que o usuario manipulem registros
+______________________________________________________
+
+Projeto A3
+
+PSC
+
+criação de um CRUD em java
+deverá conter todas as operações CRUD
+poderá conter:
+interface grafica;
+banco de dados relacional;
+sistema deverá ser capaz de gerar relatorio (inclusive no proprio terminal)
+
+necssária documentação
+
+
+Ideias: 
+- 2 tabelas: Users e Livros;
+
+- verificar se usuário tem cadastro;
+caso não haja, realizar cadastro com nome, codigo, 
+classe user, dois metodos empresta e devlve, não pode pegar livro indisponível  ou devolver livro que não pegou
+
+- barra de busca: Digite a categoria de busca (nome do livro, nome do autor, genero ou código do livro);
+--> classe livro,
+create objeto na classe livro (array);
+read consulta se tem livro;
+update metodo para atualizar status (disponivel ou indisponivel, perda)
+delete excluir livro caso danificado;
+
+
+MODELAGEM 
+
+Exigencias: 
+- caso de uso (Duda);
+- atividades (Jen);
+- classes (Nath);
+- sequencia (Sergio)
+
+Base de dados :
+- BR modelo (Sergio e Jen);
+- Criação banco (Kat, Jen, Tiff)
+- Conecção (+ Duda) 
+- MER ou DER;
+- Script de criação (Kat, Jen e Tiff); 
+- ABNT (Sergio e Nath); - google docs 
+- criar drive A3 (Nath); 
+- criar gerenciador de tarefas - Trello (Nath); 
+
+ATÉ 16/6 - APRESENTAÇÃO 23/6
+
+
+
