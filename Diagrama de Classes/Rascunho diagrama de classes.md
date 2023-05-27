@@ -189,14 +189,14 @@ tipo: string
 
 ---------------------
 
-getCodigoCategoria(): int
+getCodigo(): int
 
 getNome(): string
   
-criarCategoria():String
-AlterarCategotia():String
+setCodigo(): int
 
- 
+setNome(): int
+  
 ---------------------
 
 
