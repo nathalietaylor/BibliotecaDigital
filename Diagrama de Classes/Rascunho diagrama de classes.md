@@ -101,17 +101,25 @@ titulo: string   
 
 autor: string  
 
-genero: string     (eu acho que não tem esse dai, por ser relação) - caso for referencia da tabela relacional seria (int cod_livro, int cod_categoria) 
+categoria: categoria      - precisa ver como a gente relaciona essa com outra classe 
 
 ---------------------
 
-getCod(): int
+getCodigo(): int
 
 getTitulo(): string
 
 getAutor(): string
 
-getGenero(): int
+getCategoria(): int
+  
+setCodigo(): int
+
+setTitulo(): string
+
+setAutor(): string
+
+setCategoria(): int
 
 ---------------------
 
