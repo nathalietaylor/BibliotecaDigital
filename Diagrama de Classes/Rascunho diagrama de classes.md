@@ -4,41 +4,47 @@
 
 ##### Atributos:
 
-- Livros;
+- Livro;
+- Emprestimo;
+- Categoria;
 
-- Usuários;
-
-- Historico (Emprestimos);
-
-- Categorias.
+- Pessoa (classe pai):
+- Usuário;
+- Bibliotecária;
 
 ###### Livros:
 
 lista de atributos: codigoLivro (int), titulo(string) e autor (string) ---------> categoria é uma relação de classe, precisa ver qual se encaixa: eu achei esse site aqui : https://www.edrawsoft.com/pt/article/class-diagram-relationships.html?gclid=Cj0KCQjwyLGjBhDKARIsAFRNgW_p0--EZLX2I5UP2YVuDQ-EmQkxeTsKtmClmHBrhnSjhibOBI-pWzkaAijHEALw_wcB#:~:text=Relacionamento%20Entre%20Classes
 
-###### Usuarios:
 
-lista de atributos:  RA(long) e nome (string).
-
-###### Historico/Emprestimo:
+###### Emprestimo:
 
 lista de atributos: codigoLivro(int), titulo(string), autor (string), status (string) e nome (string);
 
-###### Categorias:
+###### Categoria:
 
 lista de atributos: codigoCategoria (int), tipo (string)
+
+#### Usuário (classe pai):
+
+###### Leitor:
+
+lista de atributos:  RA(long), nome (string) CPF (int[]).
+
+###### Biblitecaria:
+lista de atributos: nome (string) CPF (int[])
 
 
 ##### Operações:
 
-###### Livros:
+###### Livro:
 
 lista de operações: getCodigoLivro(): int, getTitulo(): string, getAutor(): string, getCategoria()
 ###### Usuarios:
 
 lista de operações: getRA(): long, getNome():string
 
-###### Historico:
+###### Emprestimo:
 
 lista de operações: getCodigoLivro(): int, getTitulo():string, getAutor():string, getStatus():string, getNome():string, setStatus():string
 
@@ -59,13 +65,13 @@ BibliotecaVirtual
 
 ---------------------------------
 
-livros: Lista<Livros>
+livro: Lista<Livros>
 
-usuarios: Lista<Usuarios>
+usuario: Lista<Usuarios>
 
 emprestimo: Lista <Emprestimo>
 
-categorias: Lista <Categoria>
+categoria: Lista <Categoria>
 
 --------------------------------
 
