@@ -29,10 +29,10 @@ lista de atributos: codigoCategoria (int), tipo (string)
 
 ###### Leitor:
 
-lista de atributos:  RA(long), nome (string) CPF (int[]).
+lista de atributos:  RA(long), nome (string), email (String).
 
 ###### Biblitecaria:
-lista de atributos: nome (string) CPF (int[])
+lista de atributos: nome (string) CPF (String), email (String 
 
 
 ##### Operações:
